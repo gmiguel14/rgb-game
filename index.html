@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color Game - Gabriel Miguel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header-align">
+        <p class="text-center">The Great</p>
+        <div class="text-center" id="color"></div>
+        <p class="text-center">Game</p>
+    </header>
+
+    <div class="button">
+        <button class="btn btn-success center-block" onclick="reload()">New Colors</button>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="color0" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="color1" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="color2" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="color3" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="color4" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="color5" class="box center-block" onclick="boxClick(this.id, this.style.backgroundColor)"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
