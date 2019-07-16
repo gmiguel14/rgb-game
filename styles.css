@@ -1,8 +1,8 @@
 .box {
-    width: 150px;
+    border-radius: 10px;
     height: 150px;
     margin-bottom: 25px;
-    border-radius: 10px;
+    width: 150px;
 }
 
 .header-align{
@@ -21,9 +21,9 @@ header{
 
 .container-fluid{
     background-color: #232323;
-    padding: 13px;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    padding: 13px;
 }
 
 #color {
