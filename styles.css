@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'button button button button'
+                         'container-fluid container-fluid container-fluid container-fluid';
+    grid-template-rows: 50vh 30vh 60vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 .box {
     border-radius: 10px;
     height: 150px;
@@ -10,20 +22,47 @@
 }
 
 .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: button;
     margin-bottom: 20px;
 }
 
+.button button {
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16pt;
+    background-color: green;
+    border: 1px solid green;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+}
+
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: header;
     background-color: #808080;
     color: #fff;
     height: 100%;
 }
 
 .container-fluid{
+    grid-area: container-fluid;
     background-color: #232323;
     background-position: center center;
     background-size: cover;
     padding: 13px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #color {
